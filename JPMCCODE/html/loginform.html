@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form validation</title>
+	<script type="text/javascript">
+	function valid()
+	{	
+		var x;
+		x=null;
+		x=document.getElementsByTagName("input");
+		
+		if(x['username'].value=="")
+			{	document.Login.n.focus();
+
+			}
+         else
+		 {
+		 }
+			 if(x["password"].value=="")
+			 {
+			 document.Login.n.focus();
+			 }
+		
+	}
+	</script>
+</head>
+<body align="center">
+<br><BR><BR><BR>
+<TABLE ALIGN="CENTER" BORDER="5" bgcolor="#663399">
+<TR>
+<FORM NAME="Login">
+<TD>
+<BR>
+&nbsp;&nbsp;<FONT SIZE="3" COLOR="white">Email id</FONT><BR>&nbsp;&nbsp;<input type="text" name="username" size="40"/>&nbsp;&nbsp; <br><BR><BR>
+&nbsp;&nbsp;<FONT SIZE="3" COLOR="white">Password<BR>&nbsp;&nbsp;<input type="password" name="password" size="40"/>&nbsp;&nbsp; <br><BR><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="role" size="30"/>Admin
+<input type="radio" name="role" size="30"/>Mentor
+<input type="radio" name="role" size="30"/>Mentee
+<br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" value="LOGIN" onClick="valid(username.val,password.val)"/>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="RESET" value="RESET"/>
+<BR><BR>
+</TD>
+</TR>
+</FORM>
+</table>
+</body>
+</html>
