@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>REGISTRATION </TITLE>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+</HEAD>
+<script language="JavaScript">
+function valid()
+{
+var un=document.Register.name.value;
+var u1=new RegExp("^[A-Za-z]\w*","g");
+var em=document.Register.emid.value;
+var e1=/^[A-Za-z]\w*\@[A-Za-z]\w*\.[a-z]{2,3}/g;
+var ph=document.Register.pno.value;
+var pd=document.Register.pwd.value;
+var p1=new RegExp("[0-9]{10}","g");
+var u=u1.test(un);
+var e=e1.test(em);
+var p=p1.test(ph);
+if(e)
+{
+alert("Registered");
+}
+else if (!u||!e||!p)
+{alert("Registration Unsuccessful.Please fill in all the details");
+
+}
+}
+</script>
+ <body background="http://www.bestpass.co.in/best/onlinepass/image/page_bg.jpg">
+<center>
+<H2><u>REGISTRATION FORM</u></h2>
+<form name="Register" method="POST" action="mentee.php">
+<center>
+<TABLE ALIGN="CENTER" BORDER="5">
+<tr>
+<td>
+<BR>
+<font color="white">
+&nbsp;&nbsp;&nbsp;<B>Name</B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name" size="20"/><br><BR>
+&nbsp;&nbsp;&nbsp;<B>Password</B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="pwd" size="20"/><br><BR>
+&nbsp;&nbsp;&nbsp;<B>Email-id</B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="emid" size="20"/><br><BR>
+&nbsp;&nbsp;&nbsp;<B>Phone no</B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="pno" size="20"/><br><BR>
+&nbsp;&nbsp;&nbsp;<B>Gender</B>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gen" value="m" size="30"/>Male
+<input type="radio" name="gen" value="f" size="30"/>Female<br><BR>
+&nbsp;
+&nbsp;&nbsp;&nbsp;<B>Domain<B>
+&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;
+<select name="dom">
+  <option value="eng">Engineering</option>
+  <option value="med">Medicine</option>
+  <option value="eng">English</option>
+  <option value="per">Personality Development</option>
+  <option value="arts">Arts</option>
+  <option value="gk">General Knowledge</option> 
+  
+  
+</select>
+<br>
+  <br>
+
+<br>
+&nbsp;&nbsp;&nbsp;<B>Domain<B>
+&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;
+<select name="lang">
+  <option value="eng">English</option>
+  <option value="kan">Kannada</option>
+  <option value="hin">Hindi</option>
+  <option value="tel">Telugu</option>
+  <option value="others">Others</option>
+   
+  
+  
+</select>
+
+<br>
+<br>
+<br>
+&nbsp;&nbsp;&nbsp;<B>Location</B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="loc" size="20"/><br><BR>
+</textarea></center>
+<br><BR>
+<B>About</B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="abt" size="100"/><br><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<center><input type ="submit"/>
+</center></center>
+</td>
+</tr>
+</form>
+</table>
+</form>
+</BODY>
+</HTML>

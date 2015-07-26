@@ -1,0 +1,36 @@
+<html>
+<head>
+<title> Mentor </title>
+<script language="JavaScript">
+function valid()
+{
+var em=document.Mentor.emid.value;
+var e1=/^[A-Za-z]\w*\@[A-Za-z]\w*\.[a-z]{2,3}/g;
+var e=e1.test(em);
+if(e)
+{
+alert("Registered");
+}
+else if (!e)
+{alert("Registration Unsuccessful.Please fill in all the details");                         
+}
+}
+</script>
+
+</head>
+
+<body align="center">
+<br>
+<br>
+<br>
+<br>
+<br>
+<form  method="POST" action="mentor_feed.php">
+<B> Mentor id <B>
+<input type="text"  name="emid" value=""/>
+<br>
+<br>
+<input type="submit" />
+</form>
+</body>
+</html>
